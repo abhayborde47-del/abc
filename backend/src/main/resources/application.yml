@@ -1,0 +1,19 @@
+# Spring Boot configuration
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/abcdb
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+  flyway:
+    enabled: true
+
+server:
+  port: 8080
+
+# Use a separate config for production secrets; these are placeholders
